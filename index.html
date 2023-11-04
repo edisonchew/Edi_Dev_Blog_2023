@@ -2,41 +2,194 @@
 <html>
     <head>
         <title>My Development Blog 2023</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
         <body>
-            <u>
-            <h1 style = "text-align: center;">My Development Blog 2023 </h1> <!--use style.css but for now i put style-->
-            </u>
-            <u>
-            <h2>Week 1 - Introduction to Web Development</h2>
-            </u>
-            <p>HTML (Hypertext Markup Language)</p>
-            <p>--> HTML is a standard markup language for 
-                creating web pages and web applications.</p>
-            <hr>
-            <h3>There are many tags that I have learnt such as:</h3>
-            <ul>
-                <li>Image Tag (img) --> Used to display an image </li>
-                <li>Unordered list (ul) --> Using bullets points to list items</li>
-                <li>Ordered list (ol) --> Using number to list items</li>
-                <li>Paragraph (p) --> Defines a paragraph</li>
-                <li>Headings (h1-h6) --> Defines HTML headings (h1 -> Most important heading, h6 -> Least important heading)</li>
-                <li>break (br) --> Inserts a single line break</li>
-                <li>Horizontal rule (hr) --> Used to seperate content (or define a change) in a  HTML page.</li>
-                <li>emphasis/stress text (em) --> Defines emphasized text</li>
-                <li>(strong) --> Defines important text by bolding the text</li>
-                <li>Inline frame (iframe) --> Used to embed another document within the current HTML document</li>
-                <li>Anchor (a) --> Defines a hyperlink</li>
-                <li>List (li) --> Defines a list item</li>
-                <li>Division (div) --> Divides the HTML documents into sections (A container unit)</li>
-                <li>Span (span) --> Used to mark up small chunks of HTML inside a line (An inline unti)</li>
-            </ul>
-            <h4>--> Tags in HTML is used to describe a website structure and tells the browser how to format content.</h4>
-            <hr>
-            <h3>Homework:</h3>
-            <ol>
-                <li>CA1 (Slide 77): Make a recipe card</li>
-                <li>CA2(Slide 96): What Makes a GOOD Website (Discussion with team)</li>
-            </ol>
+            <header>
+                <u>
+                <h1>My Development Blog 2023 </h1> <!--use style.css but for now i put style-->
+                </u>
+                <ul>
+                    <nav>
+                    <li><a href="#Week1">Week 1 - Introduction to Web Development</a></li>
+                    <li><a href="#Week2">Week 2 - Semantic & CSS</a></li>
+                    <li><a href="#Week3">Week 3 - Forms & Advance CSS Layouts</a></li>
+                    </nav>            
+                </ul>
+            </header>
+            <a name = "Week1"></a>
+            <u><h2>Week 1 - Introduction to Web Development</h2></u>
+            <section>
+                <h3>HTML (Hypertext Markup Language)</h3>
+                <p>--> HTML is a standard markup language for creating web pages and web applications.</p>
+                <hr>
+                <u><h3>What I have learnt:</h3></u>
+                <h4>Tags:</h4>
+                <div>
+                    <ul>
+                        <li>Image Tag (img) --> Used to display an image </li>
+                        <li>Unordered list (ul) --> Using bullets points to list items</li>
+                        <li>Ordered list (ol) --> Using number to list items</li>
+                        <li>Paragraph (p) --> Defines a paragraph</li>
+                        <li>Headings (h1-h6) --> Defines HTML headings (h1 -> Most important heading, h6 -> Least important heading)</li>
+                        <li>break (br) --> Inserts a single line break</li>
+                        <li>Horizontal rule (hr) --> Used to seperate content (or define a change) in a  HTML page.</li>
+                        <li>emphasis/stress text (em) --> Defines emphasized text</li>
+                        <li>(strong) --> Defines important text by bolding the text</li>
+                        <li>Inline frame (iframe) --> Used to embed another document within the current HTML document</li>
+                        <li>Anchor (a) --> Defines a hyperlink</li>
+                        <li>List (li) --> Defines a list item</li>
+                        <li>Division (div) --> Divides the HTML documents into sections (A container unit)</li>
+                        <li>Span (span) --> Used to mark up small chunks of HTML inside a line (An inline unti)</li>
+                    </ul>
+                    <h4>--> Tags in HTML is used to describe a website structure and tells the browser how to format content.</h4>
+                </div>
+                <hr>
+                <h3>Homework:</h3>
+                <ol>
+                    <li>CA1 (Slide 77): Make a recipe card</li>
+                    <li>CA2 (Slide 96): What Makes a GOOD Website (Discussion with team)</li>
+                </ol>
+                <hr>
+                <a name = "Week2"></a>
+                <u><h2>Week 2 - Semantics & CSS</h2></u>
+                <h3>Semantics</h3>
+                <ul>
+                    <li>Relates to syntax</li>
+                    <li>The meaning behind words, phrases. (In our case it is the HTML)</li>
+                </ul>
+                <u><h3>What I have learnt:</h3></u>
+                <h4>Tags:</h4>
+                <div>
+                    <ul>
+                        <li>Header (header) --> Used for navigation or introductory content (Can be used at the top of the page content to encapsulate navigation, logos</li>
+                        <li>Article (article) --> Commonly used for news content, blog posts or independently content piece</li>
+                        <li>Aside (aside) --> For content that is indirectly related to your main content (Commonly seen in sidebars or call out boxes)</li>
+                        <li>Style (style) --> Defines style information for a document</li>
+                        <li>Link (link) --> Defines the relationship between a document and an external resource (most used to link to style sheets)</li>
+                    </ul>
+                    <h4>ID Attribute - TARGETING AN INDIVIDUAL:</h4>
+                    <ul>
+                        <li>#header{} selects any element with the id "header", (p class = "header" /p)</li>
+                        <li>Unique to that element</li>
+                        <li>Hash symbol</li>
+                        <li>The "#" is how you tell CSS "this is an id".</li>
+                    </ul>
+                    <h4>Class Attribute - TARGETING A GROUP:</h4>
+                    <ul>
+                        <li>.warning { color: red; } Selects any element with the class name "warning", e.g. (p class = "warning" /p)</li>
+                        <li>Used to style an element grouping</li>
+                        <li>Targets one or more element's class attribute</li>
+                        <li>Elements can be of different type</li>
+                        <li>An element can have only 1 id but multiple classes, so you can take advantage of that for greater flexibility</li>
+                    </ul>
+                    <h4>Fonts:</h4>
+                    <ul>
+                        <li>font-size --> It is a property specifies the size of a font (Can be specified as a fixed size in various units, a percentage, or as predefined keyword</li>
+                        
+                        <ul>
+                            <li>font-size: 1.5em;</li>
+                            <li>font-size: 12px;</li>
+                            <li>font-size: 100%</li>
+                            <li>font-size: larger;</li>
+                        </ul>
+                        <li>"em' unit:</li>
+                        <ul>
+                            <li>Lets you set the size of the text relative to the text around it.</li>
+                            <li>Makes the page resize nicely proportion if the user changes their default font-size.</li>
+                            <li>The default size is "1em" or 16px</li>
+                            <li>e.g. p { font-size: 0.9em; }, strong { font-size: 1.5em; }</li>
+                        </ul>
+                        <li>"px" unit:</li>
+                        <ul>
+                            <li>Lets you size font in terms  of pixels, which is the unit also used to size images and other elements</li>
+                            <li>Easier to understand than em</li>
+                            <li>Dont work as well when printing or resizing</li>
+                            <li>e.g. h2 { font-size: 17px }</li>
+                        </ul>
+                        <li>font-style -->  Specifies the font style of the text, either "normal" by default or "italic"</li>
+                        <li>font-weight --> Specifies the thickness of the font (Default = "normal"; Typical = "bold"; can be "bolder, "lighter", or number from 100 to 900)</li>
+                    </ul>
+                </div>
+                <hr>
+                <h3>Homework:</h3>
+                <ol>
+                    <li>CA1 (Slide 17): Semantic exercise (Fork the code in repl.it) </li>
+                    <li>CA2 (Slide 35): Web Development Blog</li>
+                    <li>CA3 (Slide 58): Applying class & ID</li>
+                    <li>CA4 (Slide 59): Importing Google Fonts</li>
+                </ol>
+                <hr>
+                <a name = "Week3"></a>
+                <u><h2>Week 3 - Forms & Advance CSS Layouts</h2></u>
+                <u><h3>What I have learnt:</h3></u>
+                <h4>Tags:</h4>
+                <div>
+                    <ul>
+                        <li>Form tag(forms) --> Element used to create an HTML form for user input (For different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.)</li>
+                        <ul>
+                            <li>action --> the URL to send form data to</li>
+                            <li>method --> the type of HTTP request</li>
+                        </ul>
+                        <li>Input tag (input) --> Element is the most used form element (Can be displayed in many ways, depending on the type attribute</li>
+                        <ul>
+                            <li>input text = "text" --> Displays a single-line text input field</li>
+                            <li>input text = "radio" --> Displays a radio button (for selecting one of many choices)</li>
+                            <li>input text = "checkbox" --> Displays a checkbox (for selecting zero or more of many choices)</li>
+                            <li>input text = "submit" --> Displays a submit button (for submitting the form)</li>
+                            <li>input text = "button" --> Displays a clickable button</li>
+                        </ul>
+                        <li>Label tag (label)</li>
+                        <ul>
+                            <li>Defines a label for many form elements</li>
+                            <li>Element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focuses on the input element</li>
+                            <li>Element also helps users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the label element, it toggles the radio button/checkbox.</li>
+                            <li>The for attribute of the label tag should be equal to the id attribute of the input tag element to bind them together</li>
+                        </ul>
+                        <li>Media Queries --> Used to modify the CSS of a site depending on qualities such as viewport size or device type</li>
+                        <li>Positioning --> CSS position property lets you alter the positioning scheme of a particular element</li>
+                        <ul>
+                            <li>Relative Position</li>
+                            <ul>
+                                <li>Moves elements around relative to where they would appear on the page.</li>
+                                <li>Uses nudging boxes around</li>
+                                <li>Think of the offsets as being applied after the browser finishes laying out the page. (Uses Top, Left, Right, Bottom properties)</li>
+                            </ul>
+                            <li>Absolute Position</li>
+                            <ul>
+                                <li>Absolute position elements are placed in relation to a parent content(browser viewport, or parent element).</li>
+                                <li>Positions can be modified using positioning offsets, top, right, bottom, left</li>
+                                <li>Offset is relative to the entire browser window instead of the original position of the element</li>
+                            </ul>
+                            <li>Fixed Position</li>
+                            <ul>
+                                <li>Very similar to  absolute <strong>EXCEPT</strong> the coordinate system is relative to the entire browser window.</li>
+                                <li>Fixed elements dont scroll with the rest of the page</li>
+                                <li>Commonly known as sticky element</li>
+                            </ul>
+                            <li>Z-index</li>
+                            <ul>
+                                <li>z-index property lets you control the depth of elements on the page</li>
+                                <li>Negative z-index go further into the page (behind)</li>
+                                <li>Positive z-index comes out of the page</li>
+                                <li>An element with a higher z-index value overlaps an element with a lower z-index value</li>
+                                <li>Positioned elements have a z-index of 0 by default</li>
+                                <li>z-index <strong>ONLY on elements with a position property set to absolute, fixed, or relative. (if you set a z-index to an element with no position, it will do nothing)</strong></li>
+                            </ul>
+                            <li>FlexBox</li>
+                            <li>Wireframes</li>
+                        </ul>
+                    </ul>
+                    <hr>
+                    <h3>Homework (In another word docs):</h3>
+                    <ol>
+                        <li>CA1 (Slide 103): Design and create a simple sign up form using HTML form elements that utilizes form validation</li>
+                        <li>CA2 (Slide 104): #Z-index</li>
+                        <li>CA3 (Slide 105): #Flexboxes</li>
+                        <li>CA4 (Slide 106): #Learn how to follow the design and create the layout using html and css <b>(OPTIONAL CHALLENGE)</b></li>
+                    </ol>
+                </div>
+                <hr>
+            </section>
         </body>
     </head>
 </html>
