@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Edison's Development Blog 2023</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="myScript.js"></script>
+    </head>
+    <body>
+        <div w3-include-html="header.html"></div>
+        <script src="w3-include-HTML.js"></script>
+
+        <!--Week 4 blog-->
+        <br>
+        <u><h2>Week 4 - Putting it All Together</h2></u>
+        <u><h3>What I have learnt:</h3></u>
+        <div>
+            <ul>
+                <li>Why is Responsive Images needed?</li>
+                <ul>
+                    <li>Auto-resize based on screen size</li>
+                    <li>Better performance</li>
+                    <ul>
+                        <li>Load higher resolution images only when needed</li>
+                    </ul>
+                    <li>Provide better design control depending on device</li>
+                </ul>
+                <li>How to use Responsive Images?</li>
+                <ul>
+                    <li>To scale up and down: .responsive-img { width: 100%; height: auto;}</li>
+                    <li>When images to scale never larger than original size: .responsive-img-max {max-width: 100%; height: auto;} / 
+                        .responsive-img-max-fixed-width { max-width: 100%; width: 400px; height: auto;
+                    </li>
+                    <ul>
+                        <li>The max-width property sets a maximum width for an element, which does not allow the width of that element to be larger than its 
+                            max-width value (but it can be smaller).</li>
+                    </ul>
+                    <li>For different resolutions: Use srcset</li>
+                    <li>To fit images to box: Auto fit to box (.responsive-img-cover { background-image: url (...); background-size: cover;})
+                    </li>
+                </ul>
+            </ul>
+            <hr>
+            <h3>Homework:</h3>
+            <ol>
+                <li>CA1 (Slide 10): Using the sample flex layout to create new media queries to cater to mobile devices (2 column layout)</li>
+                <li>CA2 (Slide 11): Create this split UI using flexbox and a suitable background CSS</li>
+            </ol>
+        </div>
+    </body>

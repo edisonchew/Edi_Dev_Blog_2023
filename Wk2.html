@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Edison's Development Blog 2023</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="myScript.js"></script>
+    </head>
+    <body>
+        <div w3-include-html="header.html"></div>
+        <script src="w3-include-HTML.js"></script>
+
+        <!--Week 2 blog-->
+        <br>
+        <u><h2>Week 2 - Semantics & CSS</h2></u>
+        <h3>Semantics</h3>
+        <ul>
+            <li>Relates to syntax</li>
+            <li>The meaning behind words, phrases. (In our case it is the HTML)</li>
+        </ul>
+        <u><h3>What I have learnt:</h3></u>
+        <h4>Tags:</h4>
+        <div>
+            <ul>
+                <li>Header (header) --> Used for navigation or introductory content (Can be used at the top of the page content to encapsulate navigation, logos</li>
+                <li>Article (article) --> Commonly used for news content, blog posts or independently content piece</li>
+                <li>Aside (aside) --> For content that is indirectly related to your main content (Commonly seen in sidebars or call out boxes)</li>
+                <li>Style (style) --> Defines style information for a document</li>
+                <li>Link (link) --> Defines the relationship between a document and an external resource (most used to link to style sheets)</li>
+            </ul>
+            <h4>ID Attribute - TARGETING AN INDIVIDUAL:</h4>
+            <ul>
+                <li>#header{} selects any element with the id "header", (p class = "header" /p)</li>
+                <li>Unique to that element</li>
+                <li>Hash symbol</li>
+                <li>The "#" is how you tell CSS "this is an id".</li>
+            </ul>
+            <h4>Class Attribute - TARGETING A GROUP:</h4>
+            <ul>
+                <li>.warning { color: red; } Selects any element with the class name "warning", e.g. (p class = "warning" /p)</li>
+                <li>Used to style an element grouping</li>
+                <li>Targets one or more element's class attribute</li>
+                <li>Elements can be of different type</li>
+                <li>An element can have only 1 id but multiple classes, so you can take advantage of that for greater flexibility</li>
+            </ul>
+            <h4>Fonts:</h4>
+            <ul>
+                <li>font-size --> It is a property specifies the size of a font (Can be specified as a fixed size in various units, a percentage, or as predefined keyword</li>
+                
+                <ul>
+                    <li>font-size: 1.5em;</li>
+                    <li>font-size: 12px;</li>
+                    <li>font-size: 100%</li>
+                    <li>font-size: larger;</li>
+                </ul>
+                <li>"em' unit:</li>
+                <ul>
+                    <li>Lets you set the size of the text relative to the text around it.</li>
+                    <li>Makes the page resize nicely proportion if the user changes their default font-size.</li>
+                    <li>The default size is "1em" or 16px</li>
+                    <li>e.g. p { font-size: 0.9em; }, strong { font-size: 1.5em; }</li>
+                </ul>
+                <li>"px" unit:</li>
+                <ul>
+                    <li>Lets you size font in terms  of pixels, which is the unit also used to size images and other elements</li>
+                    <li>Easier to understand than em</li>
+                    <li>Dont work as well when printing or resizing</li>
+                    <li>e.g. h2 { font-size: 17px }</li>
+                </ul>
+                <li>font-style -->  Specifies the font style of the text, either "normal" by default or "italic"</li>
+                <li>font-weight --> Specifies the thickness of the font (Default = "normal"; Typical = "bold"; can be "bolder, "lighter", or number from 100 to 900)</li>
+            </ul>
+        </div>
+        <hr>
+        <h3>Homework:</h3>
+        <ol>
+            <li>CA1 (Slide 17): Semantic exercise (Fork the code in repl.it) </li>
+            <li>CA2 (Slide 35): Web Development Blog</li>
+            <li>CA3 (Slide 58): Applying class & ID</li>
+            <li>CA4 (Slide 59): Importing Google Fonts</li>
+        </ol>
+    </body>
+</html>

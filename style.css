@@ -23,3 +23,16 @@ ul {
 ol {
     color: brown;
 }
+
+.Weeks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;  
+}
+
+.Weeks a {
+    color: black;
+    text-decoration: none;
+}

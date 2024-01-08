@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Edison's Development Blog 2023</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="myScript.js"></script>
+    </head>
+    <body>
+        <div w3-include-html="header.html"></div>
+        <script src="w3-include-HTML.js"></script>
+
+        <!--Week 3 blog-->
+        <br>
+        <u><h2>Week 3 - Forms & Advance CSS Layouts</h2></u>
+        <u><h3>What I have learnt:</h3></u>
+        <h4>Tags:</h4>
+        <div>
+            <ul>
+                <li>Form tag(forms) --> Element used to create an HTML form for user input (For different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.)</li>
+                <ul>
+                    <li>action --> the URL to send form data to</li>
+                    <li>method --> the type of HTTP request</li>
+                </ul>
+                <li>Input tag (input) --> Element is the most used form element (Can be displayed in many ways, depending on the type attribute</li>
+                <ul>
+                    <li>input text = "text" --> Displays a single-line text input field</li>
+                    <li>input text = "radio" --> Displays a radio button (for selecting one of many choices)</li>
+                    <li>input text = "checkbox" --> Displays a checkbox (for selecting zero or more of many choices)</li>
+                    <li>input text = "submit" --> Displays a submit button (for submitting the form)</li>
+                    <li>input text = "button" --> Displays a clickable button</li>
+                </ul>
+                <li>Label tag (label)</li>
+                <ul>
+                    <li>Defines a label for many form elements</li>
+                    <li>Element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focuses on the input element</li>
+                    <li>Element also helps users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the label element, it toggles the radio button/checkbox.</li>
+                    <li>The for attribute of the label tag should be equal to the id attribute of the input tag element to bind them together</li>
+                </ul>
+                <li>Media Queries --> Used to modify the CSS of a site depending on qualities such as viewport size or device type</li>
+                <li>Positioning --> CSS position property lets you alter the positioning scheme of a particular element</li>
+                <ul>
+                    <li>Relative Position</li>
+                    <ul>
+                        <li>Moves elements around relative to where they would appear on the page.</li>
+                        <li>Uses nudging boxes around</li>
+                        <li>Think of the offsets as being applied after the browser finishes laying out the page. (Uses Top, Left, Right, Bottom properties)</li>
+                    </ul>
+                    <li>Absolute Position</li>
+                    <ul>
+                        <li>Absolute position elements are placed in relation to a parent content(browser viewport, or parent element).</li>
+                        <li>Positions can be modified using positioning offsets, top, right, bottom, left</li>
+                        <li>Offset is relative to the entire browser window instead of the original position of the element</li>
+                    </ul>
+                    <li>Fixed Position</li>
+                    <ul>
+                        <li>Very similar to  absolute <strong>EXCEPT</strong> the coordinate system is relative to the entire browser window.</li>
+                        <li>Fixed elements dont scroll with the rest of the page</li>
+                        <li>Commonly known as sticky element</li>
+                    </ul>
+                    <li>Z-index</li>
+                    <ul>
+                        <li>z-index property lets you control the depth of elements on the page</li>
+                        <li>Negative z-index go further into the page (behind)</li>
+                        <li>Positive z-index comes out of the page</li>
+                        <li>An element with a higher z-index value overlaps an element with a lower z-index value</li>
+                        <li>Positioned elements have a z-index of 0 by default</li>
+                        <li>z-index <strong>ONLY on elements with a position property set to absolute, fixed, or relative. (if you set a z-index to an element with no position, it will do nothing)</strong></li>
+                    </ul>
+                    <li>FlexBox</li>
+                    <li>Wireframes</li>
+                </ul>
+            </ul>
+            <hr>
+            <h3>Homework (In another word docs):</h3>
+            <ol>
+                <li>CA1 (Slide 103): Design and create a simple sign up form using HTML form elements that utilizes form validation</li>
+                <li>CA2 (Slide 104): #Z-index</li>
+                <li>CA3 (Slide 105): #Flexboxes</li>
+                <li>CA4 (Slide 106): #Learn how to follow the design and create the layout using html and css <b>(OPTIONAL CHALLENGE)</b></li>
+            </ol>
+        </div>
+    </body>
