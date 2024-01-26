@@ -12,7 +12,7 @@
         <script src="w3-include-HTML.js"></script>
 
         <br>
-        <u><h2>Week 6 (Part 1) - JavaScript Basics Recap</h2></u>
+        <u><h2>Week 7 (Part 1) - DOM</h2></u>
         <section>
             <u><h3>What I have learnt:</h3></u>
             <div>
@@ -37,9 +37,50 @@
                         <ul>
                             <li><b>getElementsByClassName()</b>; <br> Selects all elements that have a specific value for their class attribute</li>
                             <li><b>getElementsByTagName()</b>; <br> Selects all elements that have the specified tag name</li>
-                            <li><b>querySelectorAll() <br> Uses a CSS selector to select all matching elements/b></li>
+                            <li><b>querySelectorAll()</b> <br> Uses a CSS selector to select all matching elements</li>
                         </ul>
                         <img src="Images/Screenshot 2024-01-26 095722.png" alt="">
+                        <li>1. Accessing Elements (Traversal)</li>
+                        <ul>
+                            <li><b>parentNode</b>; <br> Selects the parent of the current node</li>
+                            <li><b>previousSibling/nextSibling</b>; <br> Selects the previous or next sibling from the DOM tree</li>
+                            <li><b>firstChild/lastChild</b>; <br> Selects the first or last child of the current element</li>
+                        </ul>
+                        <img src="Images/Screenshot 2024-01-26 235744.png" alt="">
+                        <li>1. Accessing Elements</li>
+                        <ul>
+                            <li>When a script selects an element to modify, the interpreter finds the element(s) in the DOM tree</li>
+                            <li>The following query searches the DOM tree for an element whose id attribute has a value of one</li>
+                            <li>Once the node is found, you can work with that node, its parent or children</li>
+                        </ul>
+                        <img src="Images/Screenshot 2024-01-27 002007.png" alt="">
+                        <li>1. Accessing Elements</li>
+                        <ul>
+                            <li>If you are working with the element more than once, it is best you store it in a variable</li>
+                            <li>Example: <br> var itemOne = getElementById("one");</li>
+                        </ul>
+                        <img src="Images/Screenshot 2024-01-27 004101.png" alt="">
+                        <li>1. Accessing Elements</li>
+                        <ul>
+                            <li><b>getElementById('id')</b>; <br> Selects an individual element given the value of its id. The HTML must have an id attribute</li>
+                            <li><b>querySelector('css selector')</b>; <br> Selects an individual element given the value of its id. The HTML must have an id attribute</li>
+                        </ul>
+                        <img src="Images/Screenshot 2024-01-27 004535.png" alt="">
+                        <li>1. Accessing Elements</li>
+                        <ul>
+                            <li><b>getElementsByClassName('class')</b>; <br> Selects one or more elements given the value of their class attribute</li>
+                            <li><b>getElementsByTagName('tagName')</b>; <br> Selects all elements on the page with the specified tag name</li>
+                            <li><b>querySelectorAll('css selector')</b>; <br> Uses CSS selector syntax to select one or more elements and returns all that matches</li>
+                        </ul>
+                        <img src="Images/Screenshot 2024-01-27 010338.png" alt="">
                     </ul>
                 </ul>
+                <hr>
+            <h3>Homework:</h3>
+            <ol>
+                <li>CA1 (Slide 26): DOM Grocery</li>
+            </ol>
             </div>
+        </section>
+    </body>
+</html>
