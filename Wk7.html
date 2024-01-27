@@ -75,11 +75,121 @@
                         <img src="Images/Screenshot 2024-01-27 010338.png" alt="">
                     </ul>
                 </ul>
-                <hr>
-            <h3>Homework:</h3>
-            <ol>
-                <li>CA1 (Slide 26): DOM Grocery</li>
-            </ol>
+            </div>
+        </section>
+        <hr>
+        <h3>Homework:</h3>
+        <ol>
+            <li>CA1 (Slide 26): DOM Grocery</li>
+        </ol>
+        </div>
+        <br>
+        <hr>
+        <u><h2>Week 7 (Part 2) - Events Handling</h2></u>
+        <section>
+            <u><h3>What I have learnt:</h3></u>
+            <div>
+                <ul>
+                    <li><h4>Events</h4></li>
+                    <ul>
+                        <li>Ul EVENTS: Occur when a user interacts with the browser's user interface (UI) rather than webpage</li>
+                        <ul>
+                            <li>load: Web page has finished loading</li>
+                            <li>unload: Web page is unloading (usually because a new page was requested)</li>
+                            <li>error: Browser encounters a JavaScript error or an asset doesn't exist</li>
+                            <li>resize: Browser window has been resized</li>
+                            <li>scroll: User has scrolled up or down the page</li>
+                        </ul>
+                        <li>KEYBOARD EVENTS: Occur when a user interacts with the keyboard (aka input events)</li>
+                        <ul>
+                            <li>keydown: User first presses a key (repeats while key is depressed)</li>
+                            <li>keyup: User releases a key</li>
+                            <li>keypress: Character is being inserted (repeats while key is depressed)</li>
+                        </ul>
+                        <li>MOUSE EVENTS: Occur when a user interacts with a mouse, trackpad, or touchscreen</li>
+                        <ul>
+                            <li>click: User presses and releases a button over the same element</li>
+                            <li>dblclick: User presses and releases a buttomn twice over the same element</li>
+                            <li>mousedown: User presses a mouse button while over an element</li>
+                            <li>mouseup: User releases a mouth button while over an element</li>
+                            <li>mousemove: User moves the mouse (not on a touchscreen)</li>
+                            <li>mouseover: User moves the mouse over an element (not on a touchscreen)</li>
+                            <li>mouseout: User moves the mouseoff an element (not on a touchscreen)</li>
+                        </ul>
+                        <li>FOCUS EVENTS: Occer when an element (e.g. link or form field) gains or loses focus</li>
+                        <ul>
+                            <li>focus/focusin: Element gains focus</li>
+                            <li>blur/focusout: Element loses focus</li>
+                        </ul>
+                        <li>FORM EVENTS</li>
+                        <ul>
+                            <li>input: Value in any input or textarea element has changed or any element with the contenteditable attribute</li>
+                            <li>change: Value in select box, checkbox, or radio button changes</li>
+                            <li>submit: User submits a form (using a button or a key)</li>
+                            <li>reset: User clicks on a form's reset button (rarely used in today's context) UX reasons</li>
+                            <li>cut: User cuts content from a form field</li>
+                            <li>copy: User copies content from a form field</li>
+                            <li>paste: User pastes content into a form field</li>
+                            <li>select: User selects some text in a form field</li>
+                        </ul>
+                    </ul>
+                    <li><h4>Events Listeners</h4></li>
+                    <img src="Images/Screenshot 2024-01-28 020402.png" alt="">
+                    <br>
+                    <img src="Images/Screenshot 2024-01-28 020407.png" alt="">
+                    <ul>
+                        <li>Event Object</li>
+                        <ul>
+                            <li>Changing Default Behaviour</li>
+                            <ul>
+                                <li><b>preventDefault()</b>;</li>
+                                <ul>
+                                    <li>Some events such as clicking on a link or submitting a form, brings the user to another page</li>
+                                    <li>To prevent the default behaviour of such element (e.g. to keep the user on the same page to perform validation) youcan use the event objects preventDefault() method</li>
+                                    <li>Prevents the default action of the event from triggering</li>
+                                    <li>Does not stop the propagation to parent DOM elements</li>
+                                </ul>
+                                <li><b>stopPropagation()</b>;</li>
+                                <ul>
+                                    <li>Once you have handled an event using one element, you may want to stop that event from bubbling up to its ancestor elements</li>
+                                    <li>To stop the event bubbling up, you can use the event's object's stopPropagation method.</li>
+                                    <li>Prevents the default action of the event from propagating to parent DOM elements</li>
+                                </ul>
+                            </ul>
+                        </ul>
+                    </ul>
+                    <li><h4>FORMS & VALIDATION</h4></li>
+                    <ul>
+                        <li>The reason to validate is to prevent user from entering invalid inputs.</li>
+                        <li>there is server-side validation and client-side validation</li>
+                        <img src="Images/Screenshot 2024-01-28 022350.png" alt="">
+                        <br>
+                        <img src="Images/Screenshot 2024-01-28 022631.png" alt="">
+                        <li>Focus vs Blur <br> Focus is called when a HTML element has the focus - e.g. has the mouse cursor <br> Blur is called when a HTML element lose the focus</li>
+                        <li>Forms are used to get input from users input elements must be in the form element/li>
+                        <br>
+                        <img src="Images/Screenshot 2024-01-28 022900.png" alt="">
+                        <br>
+                        <img src="Images/Screenshot 2024-01-28 022907.png" alt="">
+                        <br>
+                        <img src="Images/Screenshot 2024-01-28 022918.png" alt="">
+                        <br>
+                        <img src="Images/Screenshot 2024-01-28 022923.png" alt="">
+                        <br>
+                        <img src="Images/Screenshot 2024-01-28 022929.png" alt="">
+                        <br>
+                        <img src="Images/Screenshot 2024-01-28 022935.png" alt="">
+                        <li>SELECT & RETRIEVE FORM ELEMENT <br> By assigning a id or a class (like normal HTML) 
+                            <br> By selecting by name: <br> document.forms[form name][element name].value; 
+                            <br> <b>JS</b> <br> document.forms['myfrm']['username'].value; //based on name attribute
+                            <br> //document.getElementById('username').value; //alternative <br> <b>HTML</b> <br> 
+                            form name = 'myfrm' <br> label for='username' <br> input type='textbox' name='username' id='username' <br> /form</li>
+                    </ul>
+                    <li><h4>VALIDATING FORMS</h4></li>
+                    <ul>
+                        <img src="Images/Screenshot 2024-01-28 023745.png" alt="">
+                    </ul>
+                </ul>
             </div>
         </section>
     </body>
