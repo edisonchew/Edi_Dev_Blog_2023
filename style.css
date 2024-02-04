@@ -6,6 +6,7 @@ h1 {
 h2 {
     color:blue;
     font-family: 'Times New Roman', Times, serif;
+    text-align: center;
 }
 
 h3 {
@@ -35,4 +36,8 @@ ol {
 .Weeks a {
     color: black;
     text-decoration: none;
+}
+
+.Weeks a:hover {
+    color:#8fb344;
 }
