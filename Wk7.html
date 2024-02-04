@@ -192,5 +192,65 @@
                 </ul>
             </div>
         </section>
+        <br>
+        <hr>
+        <u><h2>Week 7 (Part 3) - Local Storage (Storing Data on the Browser)</h2></u>
+        <section>
+            <u><h3>What I have learnt:</h3></u>
+            <div>
+                <ul>
+                    <li><h4>Web Storage API Local Storage</h4></li>
+                    <ul>
+                        <li>Local Storage</li>
+                        <ul>
+                            <li>TL;DR</li>
+                            <ul>
+                                <li>HTML5 Storage is based on named key/value pairs. You store data based on a named key, then you can retrieve that data with the same key.</li>
+                                <li>The named is a string</li>
+                                <li>The data can be type supported by JavaScript, including strings, Booleans, integers, or floats.</li>
+                                <li>However, the data is actually stored as a string</li>
+                                <li>If you are Storing and retrieving anything other than strings, you will need to use functions like parseInt() or parseFloat() to coerce your retrieved data into the expected JavaScript data type</li>
+                            </ul>
+                            <li>Web Storage (or HTML5 storage) lets you store data in the browser</li>
+                            <li>The data it stores can only be accessed by the domain that set the data</li>
+                            <li>There are two types of storage: local and session storage.</li>
+                            <li>They are implemented using the localStorage and sessionStorage objects</li>
+                            <li>Commonly used in place of cookies</li>
+                            <li>Both local and session storage have the same methods to get and set data, but each lasts a different amount of time</li>
+                        </ul>
+                        <li>Methods</li>
+                        <ul>
+                            <li>setItem(key, value) <br> Creates a new key/value pair</li>
+                            <li>getItem(key) <br> Gets the value for the specified key</li>
+                            <li>removeItem(key) <br> Removes the key/value pair for the specified key</li>
+                            <li>clear() <br> Clears all information from that storage object</li>
+                        </ul>
+                        <li>Properties</li>
+                        <ul>
+                            <li>length <br> Number of keys</li>
+                        </ul>
+                    </ul>
+                    <li><h4>Data Formats JSON</h4></li>
+                    <img src="Images/Screenshot 2024-02-04 181910.png" alt="">
+                    <br>
+                    <img src="Images/Screenshot 2024-02-04 181927.png" alt="">
+                    <ul>
+                        <li>The value can be string, number, Boolean, array, object or null</li>
+                        <li>You can nest objects</li>
+                    </ul>
+                    <br>
+                    <img src="Images/Screenshot 2024-02-04 182218.png" alt="">
+                    <ul>
+                        <li>JavaScript has a JSON object with two important methods: <br> 1. Convert a JavaScript object to a string: <br> JSON.stringify(); <br> 2. Convert s string to a JavaScript object <br> JSON. parse();</li>
+                    </ul>
+                    <br>
+                    <img src="Images/Screenshot 2024-02-04 182827.png" alt="">
+                    <br>
+                    <img src="Images/Screenshot 2024-02-04 182843.png" alt="">
+                    <br>
+                    <img src="Images/Screenshot 2024-02-04 182855.png" alt="">
+                </ul>
+            </div>
+        </section>
     </body>
 </html>
